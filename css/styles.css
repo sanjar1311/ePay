@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F7CD75;
+}
+
+.container{
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.epay{
+  width: 1000px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+}
+
+.epay-left-side{
+  overflow: auto;
+  width: 35%;
+  background-color: #F2F2F2;
+  padding: 40px;
+}
+
+.left-header{
+  display: flex;
+  justify-content: space-between;
+}
