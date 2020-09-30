@@ -1,11 +1,24 @@
-*{
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body{
   background-color: #F7CD75;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
 }
 
 .container{
@@ -21,6 +34,9 @@ body{
   display: flex;
 }
 
+          /* ePay LEFT SIDE */
+
+
 .epay-left-side{
   overflow: auto;
   width: 35%;
@@ -29,6 +45,64 @@ body{
 }
 
 .left-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.viza-card{
+  width: 270px;
+  height: 150px;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+
+
+.viza-card:hover{
+  box-shadow: 1px 1px 15px 1px rgba(17, 76, 236, 0.568);
+  cursor: pointer;
+}
+
+.master-card{
+  width: 270px;
+  height: 150px;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.master-card:hover{
+  box-shadow: 1px 1px 15px 1px rgba(17, 76, 236, 0.568);
+  cursor: pointer;
+}
+
+.maestro-card{
+  width: 270px;
+  height: 150px;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.maestro-card:hover{
+  box-shadow: 1px 1px 15px 1px rgba(17, 76, 236, 0.568);
+  cursor: pointer;
+}
+
+
+      /* ePay RIGHT SIDE */
+
+.epay-right-side{
+  overflow: auto;
+  width: 65%;
+  padding: 40px;
+}
+
+.right-header{
   display: flex;
   justify-content: space-between;
 }
