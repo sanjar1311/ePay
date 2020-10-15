@@ -14,6 +14,7 @@ html {
 
 body{
   background-color: #F7CD75;
+  font-family: sans-serif;
 }
 
 a{
@@ -32,21 +33,34 @@ a{
   height: 500px;
   background-color: #fff;
   display: flex;
+  border-radius: 5px;
 }
 
           /* ePay LEFT SIDE */
 
 
 .epay-left-side{
-  overflow: auto;
   width: 35%;
   background-color: #F2F2F2;
-  padding: 40px;
+  overflow: auto;
+  padding-left: 30px;
 }
 
 .left-header{
   display: flex;
   justify-content: space-between;
+  padding: 30px 20px 10px 25px;
+}
+
+.left-main{
+  height: 420px;
+}
+
+.add-card{
+  padding: 0 15px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .viza-card{
@@ -56,12 +70,13 @@ a{
   margin-top: 20px;
   padding: 15px;
   border-radius: 3px;
+  border: 3px solid rgb(191, 191, 207);
 }
 
 
 
 .viza-card:hover{
-  box-shadow: 1px 1px 15px 1px rgba(17, 76, 236, 0.568);
+  border: 3px solid rgb(97, 97, 196);
   cursor: pointer;
 }
 
@@ -72,10 +87,11 @@ a{
   margin-top: 20px;
   padding: 15px;
   border-radius: 3px;
+  border: 3px solid rgb(191, 191, 207);
 }
 
 .master-card:hover{
-  box-shadow: 1px 1px 15px 1px rgba(17, 76, 236, 0.568);
+  border: 3px solid rgb(97, 97, 196);
   cursor: pointer;
 }
 
@@ -86,10 +102,12 @@ a{
   margin-top: 20px;
   padding: 15px;
   border-radius: 3px;
+  margin-bottom: 20px;
+  border: 3px solid rgb(191, 191, 207);
 }
 
 .maestro-card:hover{
-  box-shadow: 1px 1px 15px 1px rgba(17, 76, 236, 0.568);
+  border: 3px solid rgb(97, 97, 196);
   cursor: pointer;
 }
 
@@ -99,10 +117,62 @@ a{
 .epay-right-side{
   overflow: auto;
   width: 65%;
-  padding: 40px;
+  padding: 35px;
+  display: inline-block;
+}
+
+ol{
+  list-style-type: none;
 }
 
 .right-header{
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(226, 218, 218);
+  padding-bottom: 40px;
+}
+
+.account-list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.minus{
+  width: 20px;
+  height: 20px;
+  padding: 0 1px 4px 7px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.bold-text{
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 180px;
+}
+
+.bolder-text{
+font-size: 26px;
+font-weight: bolder;
+}
+
+.small-grey-text{
+  color: #666;
+  font-size: 12px;
+}
+
+.blue-text{
+  color: rgb(137, 145, 250);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.green-text{
+  color: rgb(121, 184, 26);
+  font-size: 20px;
+  font-weight: bolder;
 }
